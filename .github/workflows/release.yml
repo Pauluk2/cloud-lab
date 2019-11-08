@@ -18,4 +18,4 @@ jobs:
         run: |
           docker build --tag pauluk2/cloud-lab:$(cat DOCKER_TAG) .
           docker login --username ${{ secrets.DOCKER_USER }} --password ${{ secrets.DOCKER_TOKEN }}
-          docker push <JŪSŲ DOCKERHUB USERNAME>/cloud-lab:$(cat DOCKER_TAG)
+          docker push pauluk2/cloud-lab:$(cat DOCKER_TAG)
